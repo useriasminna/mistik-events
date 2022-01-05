@@ -9,4 +9,39 @@
 body {
     font-family: 'Playfair Display', serif;
     font-weight: 300;
+    color: #3a3a3a;
+}
+
+#menu{
+    line-height: 75px;
+    padding: 0 15px;
+}
+
+#menu ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+
+#menu li{
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#menu a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#menu i{
+    font-size: 25px;
+    border-bottom: 2px solid #3a3a3a;
+    padding-bottom: 5px;
+}
+
+.active{
+    display: none;
+}
+.inactive{
+    display: none;
 }
