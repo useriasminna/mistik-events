@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=The+Nautigal:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Playfair+Display&family=The+Nautigal:wght@700&display=swap');
 
 * {
     margin: 0;
@@ -10,21 +10,22 @@ body {
     font-family: 'Playfair Display', serif;
     font-weight: 300;
     color: #3a3a3a;
+    font-size: 18px;
 }
 
-#menu{
+#menu {
     line-height: 75px;
     padding: 0 15px;
 }
 
-#menu ul{
+#menu ul {
     display: flex;
     list-style: none;
     justify-content: space-around;
 }
 
-#menu li{
-    font-size: 18px;
+#menu li {
+    font-size: 110%;
     font-weight: bold;
 }
 
@@ -33,15 +34,71 @@ body {
     color: inherit;
 }
 
-#menu i{
-    font-size: 25px;
-    border-bottom: 2px solid #3a3a3a;
+#menu i {
+    font-size: 120%;
+    border-bottom: 2px solid #8b8b8b;
     padding-bottom: 5px;
 }
 
-.active{
+.active {
     display: none;
 }
-.inactive{
+
+.inactive {
     display: none;
+}
+
+#cover-image {
+    height: 350px;
+    width: 100%;
+    background: url("/assets/images/cover-img.jpg") no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+
+#cover-text {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    letter-spacing: 3px;
+    text-align: center;
+    font-style: italic;
+
+
+    width: 80%;
+    height: 200px;
+
+    padding: 10px 15px;
+
+    background-color: rgba(10, 148, 159, .8);
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    position: absolute;
+
+
+}
+
+#cover-text h1 {
+    color: white;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-family: 'Playfair Display', serif; 
+    font-size: 185%;
+}
+
+#cover-text p {
+    color: #ffebd0;
+    font-weight: bold;
+    font-family: 'Dancing Script', cursive;
+    font-size: 155%;
 }
