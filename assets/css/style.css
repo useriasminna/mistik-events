@@ -11,6 +11,7 @@ body {
     font-weight: 300;
     color: #3a3a3a;
     font-size: 18px;
+
 }
 
 #menu {
@@ -53,7 +54,9 @@ body {
     width: 100%;
     background: url("/assets/images/cover-img.jpg") no-repeat center center;
     background-size: cover;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     position: relative;
+
 }
 
 #cover-text {
@@ -92,7 +95,7 @@ body {
     color: white;
     font-weight: bold;
     text-transform: uppercase;
-    font-family: 'Playfair Display', serif; 
+    font-family: 'Playfair Display', serif;
     font-size: 185%;
 }
 
@@ -101,4 +104,60 @@ body {
     font-weight: bold;
     font-family: 'Dancing Script', cursive;
     font-size: 155%;
+}
+
+#main-purpose {
+    height: 400px;
+    max-width: 100%;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    padding: 30px;
+    background-color: snow;
+}
+
+#main-purpose>i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#main-purpose h1 {
+    margin-bottom: 15px;
+}
+
+#main-purpose p {
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin: 10px auto;
+    font-style: italic;
+    color: #4a4a4a;
+    margin-bottom: 30px;
+
+}
+
+.book-btn {
+    width: 70%;
+    padding: 10px;
+    background-color: rgba(10, 148, 159, .8);
+    border: 1px solid rgba(10, 148, 159, .8);
+    border-radius: 25px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
+        rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
+    transition: 0.2s all;
+}
+
+.book-btn a{
+    text-decoration: none;
+    font-weight: bold;
+    color: #fffafa;
+}
+
+.book-btn:active {
+    transform: scale(0.97);
+    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
 }
