@@ -108,7 +108,7 @@ body {
 }
 
 #main-purpose {
-    height: 450px;
+    height: 460px;
     max-width: 100%;
 
     display: flex;
@@ -118,7 +118,6 @@ body {
     text-align: center;
 
     padding: 30px;
-    background-color: snow;
 }
 
 #main-purpose>i {
@@ -133,6 +132,7 @@ body {
 .decorated {
     text-align: center;
     width: 100%;
+    overflow: hidden;
 }
 
 .decorated>span {
@@ -198,7 +198,6 @@ body {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    background-color: snow;
     margin-bottom: 10px;
 }
 
@@ -240,6 +239,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    padding:0 30px;
 
 }
 
