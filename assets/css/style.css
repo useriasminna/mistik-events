@@ -4,6 +4,7 @@
     margin: 0;
     padding: 0;
     border: none;
+    box-sizing: border-box;
 }
 
 body {
@@ -107,7 +108,7 @@ body {
 }
 
 #main-purpose {
-    height: 400px;
+    height: 450px;
     max-width: 100%;
 
     display: flex;
@@ -129,6 +130,34 @@ body {
     margin-bottom: 15px;
 }
 
+.decorated {
+    text-align: center;
+    width: 100%;
+}
+
+.decorated>span {
+    position: relative;
+    display: inline-block;
+}
+
+.decorated>span:before,
+.decorated>span:after {
+    content: '';
+    position: absolute;
+    top: 51%;
+    border-bottom: 2px solid #cfcfcf;
+    width: 100vw;
+    margin: 0 20px;
+}
+
+.decorated>span:before {
+    right: 100%;
+}
+
+.decorated>span:after {
+    left: 100%;
+}
+
 #main-purpose p {
     font-size: 16px;
     font-weight: bold;
@@ -143,8 +172,8 @@ body {
 .book-btn {
     width: 70%;
     padding: 10px;
-    background-color: rgba(10, 148, 159, .8);
-    border: 1px solid rgba(10, 148, 159, .8);
+    background-color: #3a3a3a;
+    border: 1px solid #000;
     border-radius: 25px;
     box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
         rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
@@ -154,7 +183,7 @@ body {
 .book-btn a {
     text-decoration: none;
     font-weight: bold;
-    color: #fffafa;
+    color: white;
 }
 
 .book-btn:active {
@@ -170,6 +199,7 @@ body {
     justify-content: center;
     position: relative;
     background-color: snow;
+    margin-bottom: 10px;
 }
 
 #slider img {
@@ -204,4 +234,112 @@ body {
 
 .left {
     right: 88%;
+}
+
+#services {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+#services>i {
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+#services>h1 {
+    margin-bottom: 20px;
+}
+
+.circle-container {
+    width: 320px;
+    height: 320px;
+    border-radius: 50%;
+    border: 5px solid rgb(166 174 175 / 50%);
+    ;
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.circle-cover {
+    width: 300px;
+    height: 300px;
+    margin: 0 auto;
+    border-radius: 50%;
+    position: relative;
+
+}
+
+#service1 {
+    background: url("/assets/images/img_dance_cover.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+#service2 {
+    background: url("/assets/images/img_princesses_cover.jpg") no-repeat center bottom;
+    background-size: cover;
+}
+
+#service3 {
+    background: url("/assets/images/img_deco_cover.jpg") no-repeat center center;
+    background-size: cover;
+}
+
+.circle-middle {
+    height: 300px;
+    width: 300px;
+    opacity: 0;
+    border-radius: 50%;
+    background-color: rgba(128 149 151 / 50%);
+    transition: .2s ease;
+    position: absolute;
+
+}
+
+.circle-middle:hover {
+    cursor: pointer;
+    opacity: 1;
+}
+
+
+.circle-text {
+
+    padding: 10px;
+    letter-spacing: 4px;
+    text-align: center;
+
+    font-size: 20px;
+    font-weight: bold;
+    color: white;
+    background-color: rgb(0 0 0 / 48%);
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+#services-btn {
+    width: 60%;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #c1c1c1;
+    border-radius: 25px;
+    box-shadow: rgb(0 0 0 / 25%) 0px 0.0625em 0.0625em, rgb(0 0 0 / 25%) 0px 0.125em 0.5em, rgb(255 255 255 / 10%) 0px 0px 0px 1px inset;
+    transition: 0.2s all;
+}
+
+#services-btn a {
+    text-decoration: none;
+    font-weight: bold;
+    color: #3a3a3a;
+}
+
+#services-btn:active {
+    transform: scale(0.97);
+    box-shadow: 3px 2px 22px 1px rgb(0 0 0 / 24%);
 }
