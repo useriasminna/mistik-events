@@ -15,6 +15,18 @@ body {
 
 }
 
+button {
+    box-shadow: rgb(0 0 0 / 25%) 0px 0.0625em 0.0625em,
+        rgb(0 0 0 / 25%) 0px 0.125em 0.5em,
+        rgb(255 255 255 / 10%) 0px 0px 0px 1px inset;
+        transition: 0.2s ease-out
+}
+
+button:active {
+    transform: scale(0.97);
+    box-shadow: 3px 2px 22px 1px rgb(0 0 0 / 24%);
+}
+
 #menu {
     line-height: 75px;
     padding: 0 15px;
@@ -169,26 +181,20 @@ body {
 
 }
 
-.book-btn {
-    width: 70%;
-    padding: 10px;
+a .book-btn {
+    width: 250px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
     background-color: #3a3a3a;
     border: 1px solid #000;
     border-radius: 25px;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 0.0625em 0.0625em, rgba(0, 0, 0, 0.25) 0px 0.125em 0.5em,
-        rgba(255, 255, 255, 0.1) 0px 0px 0px 1px inset;
-    transition: 0.2s all;
 }
 
-.book-btn a {
-    text-decoration: none;
-    font-weight: bold;
-    color: white;
-}
-
-.book-btn:active {
-    transform: scale(0.97);
-    box-shadow: 3px 2px 22px 1px rgba(0, 0, 0, 0.24);
+a .book-btn:hover {
+    cursor: pointer;
+    background-color: white;
+    color: #3a3a3a;
 }
 
 #slider {
@@ -239,7 +245,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding:0 30px;
+    padding: 0 30px;
 
 }
 
@@ -257,7 +263,7 @@ body {
     height: 320px;
     border-radius: 50%;
     border: 5px solid rgb(166 174 175 / 50%);
-    ;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
     margin-bottom: 20px;
     display: flex;
     align-items: center;
@@ -323,23 +329,49 @@ body {
 
 }
 
-#services-btn {
-    width: 60%;
-    padding: 10px;
+a #services-btn {
+    width: 250px;
+    padding: 10px 20px;
+    font-weight: bold;
+    color: #3a3a3a;
+    margin-bottom: 20px;
     background-color: #eee;
     border: 1px solid #c1c1c1;
     border-radius: 25px;
-    box-shadow: rgb(0 0 0 / 25%) 0px 0.0625em 0.0625em, rgb(0 0 0 / 25%) 0px 0.125em 0.5em, rgb(255 255 255 / 10%) 0px 0px 0px 1px inset;
-    transition: 0.2s all;
+
 }
 
-#services-btn a {
+a #services-btn:hover {
+    cursor: pointer;
+    background-color: #ffffff;
+}
+
+.up-btn {
+    height: 45px;
+    width: 45px;
+
+    border: 1px solid rgb(0 128 139);
+    border-radius: 50%;
+    background-color: rgba(10, 148, 159, .8);
+   
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.up-btn a {
     text-decoration: none;
-    font-weight: bold;
-    color: #3a3a3a;
+    font-size: 20px;
+    color: white;
 }
 
-#services-btn:active {
-    transform: scale(0.97);
+.up-btn:hover{
+    opacity: 0.8;
+}
+
+.up-btn:active {
+    transform: scale(0.97) translateX(-50%);
+    ;
     box-shadow: 3px 2px 22px 1px rgb(0 0 0 / 24%);
 }
+
