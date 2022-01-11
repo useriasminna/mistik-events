@@ -19,13 +19,15 @@ button {
     box-shadow: rgb(0 0 0 / 25%) 0px 0.0625em 0.0625em,
         rgb(0 0 0 / 25%) 0px 0.125em 0.5em,
         rgb(255 255 255 / 10%) 0px 0px 0px 1px inset;
-        transition: 0.2s ease-out
+    transition: 0.2s ease-out
 }
 
 button:active {
     transform: scale(0.97);
     box-shadow: 3px 2px 22px 1px rgb(0 0 0 / 24%);
 }
+
+/* HEADER SECTION */
 
 #menu {
     line-height: 75px;
@@ -61,6 +63,8 @@ button:active {
 .inactive {
     display: none;
 }
+
+/* COVER SECTION */
 
 #cover-image {
     height: 350px;
@@ -119,10 +123,10 @@ button:active {
     font-size: 155%;
 }
 
-#main-purpose {
-    height: 460px;
-    max-width: 100%;
+/* OUR MISSION SECTION */
 
+#main-purpose {
+    max-width: 100%;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -132,7 +136,7 @@ button:active {
     padding: 30px;
 }
 
-#main-purpose>i {
+#main-purpose > i {
     font-size: 30px;
     margin-bottom: 10px;
 }
@@ -141,19 +145,21 @@ button:active {
     margin-bottom: 15px;
 }
 
+/* Title decoration from https://stackoverflow.com/questions/15557627/heading-with-horizontal-line-on-either-side */
+
 .decorated {
     text-align: center;
     width: 100%;
     overflow: hidden;
 }
 
-.decorated>span {
+.decorated > span {
     position: relative;
     display: inline-block;
 }
 
-.decorated>span:before,
-.decorated>span:after {
+.decorated > span:before,
+.decorated > span:after {
     content: '';
     position: absolute;
     top: 51%;
@@ -162,11 +168,11 @@ button:active {
     margin: 0 20px;
 }
 
-.decorated>span:before {
+.decorated > span:before {
     right: 100%;
 }
 
-.decorated>span:after {
+.decorated > span:after {
     left: 100%;
 }
 
@@ -180,6 +186,8 @@ button:active {
     margin-bottom: 30px;
 
 }
+
+/* Book event button */
 
 a .book-btn {
     width: 250px;
@@ -196,6 +204,8 @@ a .book-btn:hover {
     background-color: white;
     color: #3a3a3a;
 }
+
+/* SLIDER SECTION */
 
 #slider {
     width: 100%;
@@ -241,6 +251,8 @@ a .book-btn:hover {
     right: 88%;
 }
 
+/* HOME SERVICES SECTION */
+
 #services {
     display: flex;
     flex-direction: column;
@@ -249,12 +261,12 @@ a .book-btn:hover {
 
 }
 
-#services>i {
+#services > i {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-#services>h1 {
+#services > h1 {
     margin-bottom: 20px;
 }
 
@@ -346,14 +358,17 @@ a #services-btn:hover {
     background-color: #ffffff;
 }
 
+/* Button sending to top of page */
+
 .up-btn {
     height: 45px;
     width: 45px;
+    margin-bottom: 20px;
 
     border: 1px solid rgb(0 128 139);
     border-radius: 50%;
     background-color: rgba(10, 148, 159, .8);
-   
+
     position: relative;
     left: 50%;
     transform: translateX(-50%);
@@ -365,7 +380,7 @@ a #services-btn:hover {
     color: white;
 }
 
-.up-btn:hover{
+.up-btn:hover {
     opacity: 0.8;
 }
 
@@ -375,3 +390,28 @@ a #services-btn:hover {
     box-shadow: 3px 2px 22px 1px rgb(0 0 0 / 24%);
 }
 
+/* FOOTER */
+
+footer{
+    height: 150px;
+    width: 100%;
+    
+    font-size: 40px;
+    background-color:rgb(10 148 159 / 80%) ;
+    box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
+
+}
+
+footer ul{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    list-style-type: none;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+footer a{
+    color: white;
+}
