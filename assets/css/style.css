@@ -22,7 +22,7 @@ button {
     transition: 0.2s ease-out
 }
 
-button:hover{
+button:hover {
     cursor: pointer;
 }
 
@@ -68,10 +68,12 @@ button:active {
     display: none;
 }
 
+/* -------------------------HOME PAGE-------------------------------- */
+
 /* COVER SECTION */
 
 #cover-image {
-    height: 350px;
+    height: 300px;
     width: 100%;
     background: url("/assets/images/cover-img.jpg") no-repeat center center;
     background-size: cover;
@@ -140,7 +142,7 @@ button:active {
     padding: 30px;
 }
 
-#main-purpose > i {
+#main-purpose>i {
     font-size: 30px;
     margin-bottom: 10px;
 }
@@ -157,13 +159,13 @@ button:active {
     overflow: hidden;
 }
 
-.decorated > span {
+.decorated>span {
     position: relative;
     display: inline-block;
 }
 
-.decorated > span:before,
-.decorated > span:after {
+.decorated>span:before,
+.decorated>span:after {
     content: '';
     position: absolute;
     top: 51%;
@@ -172,11 +174,11 @@ button:active {
     margin: 0 20px;
 }
 
-.decorated > span:before {
+.decorated>span:before {
     right: 100%;
 }
 
-.decorated > span:after {
+.decorated>span:after {
     left: 100%;
 }
 
@@ -218,7 +220,6 @@ a .book-btn:hover {
     flex-direction: column;
     justify-content: center;
     position: relative;
-    margin-bottom: 10px;
 }
 
 #slider img {
@@ -263,16 +264,16 @@ a .book-btn:hover {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0 30px;
+    padding: 30px;
 
 }
 
-#services > i {
+#services>i {
     font-size: 30px;
     margin-bottom: 10px;
 }
 
-#services > h1 {
+#services>h1 {
     margin-bottom: 20px;
 }
 
@@ -352,7 +353,6 @@ a #services-btn {
     padding: 10px 20px;
     font-weight: bold;
     color: #3a3a3a;
-    margin-bottom: 20px;
     background-color: #eee;
     border: 1px solid #c1c1c1;
     border-radius: 25px;
@@ -398,17 +398,17 @@ a #services-btn:hover {
 
 /* FOOTER */
 
-footer{
+footer {
     height: 150px;
     width: 100%;
-    
+
     font-size: 40px;
-    background-color:rgb(10 148 159 / 80%) ;
+    background-color: rgb(10 148 159 / 80%);
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 
 }
 
-footer ul{
+footer ul {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
@@ -418,6 +418,116 @@ footer ul{
     transform: translateY(-50%);
 }
 
-footer a{
+footer a {
     color: white;
+}
+
+/* -------------------------SERVICES PAGE-------------------------------- */
+
+/* SECONDARY PAGE COVER */
+
+.simple-cover-image {
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background: url(/assets/images/second_cover_img.jpg) no-repeat center top;
+    background-size: cover;
+}
+
+.simple-cover-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    letter-spacing: 3px;
+    text-align: center;
+    font-style: italic;
+    font-size: 120%;
+    color: black;
+
+    width: 100%;
+
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: absolute;
+}
+
+/* SERVICES CARDS SECTION */
+
+#main-services {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#main-services-container{
+    margin-bottom: 20px;
+}
+
+
+.service-details-card {
+    display: flex;
+    flex-direction: column;
+    background-color: #ffffff;
+    box-shadow: rgba(0, 0, 0, 0.1) -4px 9px 25px -6px;    padding: 30px;
+    margin-top: 10px;
+}
+
+.card-cover {
+    height: 250px;
+    width: 100%;
+    box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
+    margin-bottom: 10px;
+}
+
+#card-cover-dance {
+    background: url("/assets/images/img_dance_service_cover.jpg") no-repeat center center;
+    background-size: cover;
+
+}
+
+#card-cover-princesses {
+    background: url("/assets/images/img_princesses_service_cover.jpg") no-repeat center center;
+    background-size: cover;
+
+}
+
+#card-cover-deco {
+    background: url("/assets/images/img_deco_service_cover.jpg") no-repeat center center;
+    background-size: cover;
+
+}
+
+.card-details h2 {
+    margin-bottom: 15px;
+}
+
+.card-details p {
+    text-align: justify;
+    margin-bottom: 15px;
+}
+
+.card-details span {
+    text-align: center;
+    font-style: italic;
+    line-height: 30px;
+}
+
+.card-details b {
+    font-style: normal;
+}
+
+.card-details a {
+    text-decoration: none;
+    border-bottom: 2px solid black;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    margin-top: 20px;
+}
+
+.card-details a:hover {
+ cursor: pointer;
 }
