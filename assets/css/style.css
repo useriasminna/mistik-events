@@ -75,7 +75,7 @@ button:active {
 #cover-image {
     height: 300px;
     width: 100%;
-    background: url("/assets/images/cover-img.jpg") no-repeat center center;
+    background: url("/assets/images/cover.jpg") no-repeat center center;
     background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     position: relative;
@@ -87,20 +87,14 @@ button:active {
     display: flex;
     flex-direction: column;
     justify-content: center;
-
     letter-spacing: 3px;
     text-align: center;
     font-style: italic;
-
-
-    width: 80%;
-    height: 200px;
-
+    width: 90%;
+    height: 170px;
     padding: 10px 15px;
-
-    background-color: rgba(10, 148, 159, .8);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
-
+    background-color: rgb(225 220 223 / 80%);
+    box-shadow: rgb(50 50 93 / 25%) 0px 13px 27px -5px, rgb(0 0 0 / 30%) 0px 8px 16px -8px;
     left: 0;
     right: 0;
     top: 0;
@@ -115,7 +109,7 @@ button:active {
 }
 
 #cover-text h1 {
-    color: white;
+    color: #662e34;
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Playfair Display', serif;
@@ -123,7 +117,7 @@ button:active {
 }
 
 #cover-text p {
-    color: #ffebd0;
+    color: rgb(0 34 129 / 81%);
     font-weight: bold;
     font-family: 'Dancing Script', cursive;
     font-size: 155%;
@@ -371,9 +365,9 @@ a #services-btn:hover {
     width: 45px;
     margin-bottom: 20px;
 
-    border: 1px solid rgb(0 128 139);
+    border: 1px solid #5c181f;
     border-radius: 50%;
-    background-color: rgba(10, 148, 159, .8);
+    background-color: #662e34;
 
     position: relative;
     left: 50%;
@@ -403,7 +397,7 @@ footer {
     width: 100%;
 
     font-size: 40px;
-    background-color: rgb(10 148 159 / 80%);
+    background-color: #662e34;
     box-shadow: rgb(0 0 0 / 35%) 0px 5px 15px;
 
 }
@@ -444,11 +438,11 @@ footer a {
     text-align: center;
     font-style: italic;
     font-size: 120%;
-    color: black;
+    color: #662e34;
 
     width: 100%;
 
-    top: 60%;
+    top: 44%;
     left: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
@@ -464,7 +458,6 @@ footer a {
 }
 
 #main-services > p{
-    font-size: 110%;
     font-weight: bold;
     width: 81%;
     margin: 30px auto 20px;
