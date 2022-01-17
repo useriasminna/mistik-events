@@ -49,8 +49,49 @@
         </div>
     </section>
     <!-- CONTACT US FORM -->
-    <section>
-        Form
+    <section id="form-section">
+        <p>Please send us your event details and we will get back to you shortly</p>
+        <form action="https://formdump.codeinstitute.net" method="POST">
+            <div>
+                <label for="name">name</label><br>
+                <input id="name" class="text-input" name="name" type="text" required="">
+            </div>
+            <div>
+                <label for="email">email address</label><br>
+                <input id="email" class="text-input" name="email_address" type="email" required="">
+            </div>
+            <div>
+                <label for="phone">phone number</label><br>
+                <input id="phone" name="phone_number" placeholder="08X XXX XXXX" pattern="08[0-9]{1}[0-9]{3}[0-9]{4}"
+                    required="">
+            </div>
+            <div>
+                <label for="date">please pick a date for your event</label><br>
+                <input id="date" name="event_date" type="date" required="" pattern="\d{2}-\d{2}-\d{4}">
+            </div>
+            <div>
+                <label for="services-options">please choose the service you want</label><br>
+                <select name="services-options" id="services-options">
+                    <option value="dance moments">Dance Moments</option>
+                    <option value="christening fairies">Christening Fairies</option>
+                    <option value="decorations">Decorations</option>
+                </select>
+            </div>
+            <div>
+                <label for="requirements">tell us more about your event or additional requirements</label>
+                <textarea id="requirements" name="requirements" rows="6"></textarea>
+            </div>
+            <button id="submit-btn" type="submit">book now</button>
+
+        </form>
+        <div id="contact-phone">
+            <h1>or</h1>
+            <h2>phone us directly</h3>
+            <a href="tel:+40761432883">
+                <div>076 143 2883 <i class="fas fa-phone" aria-hidden="true"></i></div>
+            </a>
+
+        </div>
     </section>
     <!-- FOOTER -->
     <footer>
