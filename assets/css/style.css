@@ -189,7 +189,7 @@ button:active {
 
 /* Book event button */
 
-a .book-btn {
+.book-btn {
     width: 250px;
     padding: 10px 20px;
     color: white;
@@ -199,7 +199,7 @@ a .book-btn {
     border-radius: 25px;
 }
 
-a .book-btn:hover {
+.book-btn:hover {
     cursor: pointer;
     background-color: white;
     color: #3a3a3a;
@@ -342,7 +342,7 @@ a .book-btn:hover {
 
 }
 
-a #services-btn {
+#services-btn {
     width: 250px;
     padding: 10px 20px;
     font-weight: bold;
@@ -353,7 +353,7 @@ a #services-btn {
 
 }
 
-a #services-btn:hover {
+#services-btn:hover {
     cursor: pointer;
     background-color: #ffffff;
 }
@@ -374,8 +374,7 @@ a #services-btn:hover {
     transform: translateX(-50%);
 }
 
-.up-btn a {
-    text-decoration: none;
+.up-btn i {
     font-size: 20px;
     color: white;
 }
