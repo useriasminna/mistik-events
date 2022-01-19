@@ -25,22 +25,16 @@ This site was created so that users can easily understand all the content that a
 The wireframes for mobile and desktop can be viewed at this [link]()<br><br>
 ## Design<hr>
 ## Features<hr>
-
 ### Existing Features<br>
-### Features Left To Implement<br>
+### Features Left To Implement<br><br>
 ## Testing<hr>
-<hr>
-##Validator Testing<br>
-##Unfixed Bugs<br>
-#DEPLOYMENT
-<hr>
-#CREDITS
-<hr>
-##Content<br>
-##Code<br>
-##Media<br>
-#TOOLS
-<hr>
-#ACKNOWLEDGEMENTS
-<hr>
+## Validator Testing<hr>
+## Unfixed Bugs<hr>
+## Deployment<hr>
+## Credits<hr>
+### Content<br>
+### Code<br>
+### Media<br><br>
+## Tools<hr>
+## Acknowledgements<hr>
 
