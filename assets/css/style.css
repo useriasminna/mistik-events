@@ -61,7 +61,7 @@ button:active {
 }
 
 .active {
-    display: none;
+    display: block;
 }
 
 .inactive {
@@ -212,13 +212,14 @@ button:active {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    position: relative;
+
 }
 
 #slider img {
     box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
     width: 100%;
     height: auto;
+    position: relative;
 }
 
 .mySlides {
@@ -244,11 +245,11 @@ button:active {
 }
 
 .right {
-    left: 88%;
+    right: 5%;
 }
 
 .left {
-    right: 88%;
+    left: 5%;
 }
 
 /* HOME SERVICES SECTION */
@@ -318,7 +319,6 @@ button:active {
 
 .circle-middle:hover {
     cursor: pointer;
-    opacity: 1;
 }
 
 
@@ -646,7 +646,8 @@ form #requirements:focus-visible {
 #contact-phone h2 {
     margin-bottom: 10px;
 }
-#contact-phone h2{
+
+#contact-phone h2 {
     font-size: 120%;
 }
 
@@ -675,14 +676,14 @@ form #requirements:focus-visible {
 
 }
 
-#form-submit{
+#form-submit {
     padding: 30px;
     text-align: center;
     text-transform: uppercase;
     color: #40d158;
 }
 
-#form-submit div{
+#form-submit div {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -690,29 +691,230 @@ form #requirements:focus-visible {
     height: 350px;
     width: 100%;
 }
-#form-submit i{
+
+#form-submit i {
     font-size: 100px;
     margin-bottom: 20px;
 }
 
-#form-submit h1{
+#form-submit h1 {
     margin-bottom: 20px;
 }
 
-#form-submit a{
+#form-submit a {
     text-decoration: none;
     font-weight: bold;
     color: #3a3a3a;
 
 }
 
-#form-submit a:hover{
+#form-submit a:hover {
     cursor: pointer;
 }
 
 
 /* DESIGN FOR TABLETS */
 
-@media (min-width:480px){
+@media (min-width:480px) {
+
+    /* COVER SECTION */
+    #cover-image {
+        height: 350px;
+    }
+
+    #cover-text {
+        width: 75%;
+        height: 230px;
+        font-size: medium;
+    }
+
+    /* ABOUT US SECTION */
+    #main-purpose {
+        padding: 30px 50px;
+    }
+
+    /* SLIDER SECTION */
+    .display-btn {
+        height: 45px;
+        width: 45px;
+    }
+
+    /* SERVICES SECTION */
+    #services {
+        padding: 30px 50px;
+    }
+
+    .circle-container {
+        width: 370px;
+        height: 370px;
+    }
+
+    .circle-middle {
+        width: 350px;
+        height: 350px;
+    }
+
+    .circle-cover {
+        width: 350px;
+        height: 350px;
+    }
+
+    .circle-text {
+        font-size: large;
+    }
+
+    /* BUTTON TO TOP OF THE PAGE */
+    .up-btn {
+        height: 50px;
+        width: 50px;
+    }
+}
+
+@media (min-width:801px) {
+
+    body,
+    p,
+    button {
+        font-size: medium;
+    }
+
+     /* HEADER SECTION - MENU */
+    #menu a:not(.active):hover{
+        border-bottom:  2px solid #c43434;
+        border-bottom: 2px solid #8b8b8b;
+        padding-bottom: 5px;
+    }
+
+    /* COVER SECTION */
+    #cover-image {
+        height: 400px;
+    }
+
+    #cover-text {
+        width: 65%;
+        height: 230px;
+        font-size: large;
+    }
+
+    /* ABOUT US SECTION */
+    #main-purpose {
+        padding: 40px 60px;
+    }
+
+    #main-purpose p {
+        font-size: medium;
+        line-height: 22px;
+        padding: 0 20px;
+    }
+
+    /* SLIDER SECTION */
+    #slider {
+        padding: 0 60px;
+    }
+
+    .right {
+        right: 9%;
+    }
+
+    .left {
+        left: 9%;
+    }
+
+    /* SERVICES SECTION */
+    #services {
+        padding: 40px 60px;
+    }
+
+    .circle-middle:hover {
+        opacity: 1;
+    }
+
+}
+
+@media (min-width:1025px) {
+
+    /* HEADER SECTION */
+    #menu li {
+        font-size: 125%;
+    }
+
+    /* BUTTON TO TOP OF THE PAGE */
+    .up-btn {
+        height: 60px;
+        width: 60px;
+    }
+
+    /* FOOTER SECTION */
+    footer {
+        height: 280px;
+        font-size: 50px;
+    }
+
+}
+
+@media (min-width:1281px) {
+
+    body,
+    p,
+    button {
+        font-size: large;
+    }
+
+    /* HEADER SECTION */
+    #menu {
+        line-height: 90px;
+    }
+
+    #menu li {
+        font-size: 28px;
+    }
+
+    /* COVER SECTION */
+    #cover-image {
+        height: 600px;
+    }
+
+    #cover-text {
+        height: 350px;
+        font-size: 35px;
+    }
+
+    /* ABOUT US SECTION */
+    #main-purpose {
+        padding: 60px 80px;
+    }
+
+    #main-purpose p {
+        font-size: large;
+        line-height: 45px;
+        padding: 0px 80px;
+    }
+
+    .book-btn {
+        width: 280px;
+    }
+
+    /* SLIDER SECTION */
+    #slider img {
+        width: 55%;
+    }
+
+    .display-btn {
+        height: 60px;
+        width: 60px;
+    }
+
+    /* SERVICES SECTION */
+    #services {
+        padding: 60px 80px;
+    }
+
+    #services-circles {
+        width: 100%;
+        display: flex;
+        justify-content: space-around;
+        margin: 60px 0;
+    }
+
 
 }
