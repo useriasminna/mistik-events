@@ -45,7 +45,7 @@ button:active {
 }
 
 #menu li {
-    font-size: 110%;
+    font-size: 19px;
     font-weight: bold;
 }
 
@@ -453,12 +453,13 @@ footer a {
     flex-direction: column;
     text-align: center;
     margin-bottom: 30px;
+    padding: 30px;
 }
 
 #main-services>p {
     font-weight: bold;
-    width: 81%;
-    margin: 33px auto 20px;
+    width: 100%;
+    margin: 3px auto;
     color: #3a3a3a;
     text-transform: uppercase;
 }
@@ -473,16 +474,17 @@ footer a {
     flex-direction: column;
     width: 98%;
     background-color: #ffffff;
-    padding: 30px;
+    padding: 30px 0;
     margin: 10px auto;
     box-shadow: rgb(33 35 38 / 10%) 0px 10px 10px -10px;
 }
 
 .card-cover {
     height: 250px;
-    width: 100%;
+    width: 296px;
     box-shadow: rgb(50 50 93 / 25%) 0px 6px 12px -2px, rgb(0 0 0 / 30%) 0px 3px 7px -3px;
-    margin-bottom: 10px;
+    margin: 0 auto 10px auto;
+
 }
 
 #card-cover-dance {
@@ -498,7 +500,7 @@ footer a {
 }
 
 #card-cover-deco {
-    background: url("/assets/images/img_deco_service_cover.jpg") no-repeat center center;
+    background: url("/assets/images/img_deco_service_cover.jpg") no-repeat center top;
     background-size: cover;
 
 }
@@ -508,7 +510,7 @@ footer a {
 }
 
 .card-details p {
-    text-align: justify;
+    text-align: center;
     margin-bottom: 15px;
 }
 
@@ -555,18 +557,21 @@ footer a {
 /* -------------------------CONTACT US PAGE---------------------------------- */
 
 /* CONTACT FORM SECTION */
+#form-section {
+    padding: 30px;
+}
 
 #form-section p {
     font-weight: bold;
     text-align: center;
-    width: 80%;
-    margin: 33px auto 20px;
+    width: 100%;
+    margin: 3px auto 20px;
     color: #3a3a3a;
     text-transform: uppercase;
 }
 
 form {
-    padding: 10px 30px;
+    padding: 10px 0;
     text-transform: uppercase;
 }
 
@@ -730,7 +735,7 @@ form #requirements:focus-visible {
 
     /* ABOUT US SECTION */
     #main-purpose {
-        padding: 30px 50px;
+        padding: 40px 50px;
     }
 
     /* SLIDER SECTION */
@@ -768,19 +773,53 @@ form #requirements:focus-visible {
         height: 50px;
         width: 50px;
     }
+
+    /* SECOND COVER SECTION */
+    .simple-cover-image {
+        background: url(/assets/images/second_cover.jpeg) no-repeat center center;
+        background-size: cover;
+        height: 300px;
+    }
+
+    .simple-cover-text {
+        font-size: 135%;
+        top: 50%;
+    }
+
+    /* SERVICES PAGE - DETAILS SECTION */
+    #main-services {
+        padding: 40px 50px;
+    }
+
+    #main-services>p {
+        margin: 3px auto 20px;
+    }
+
+    .card-cover {
+        height: 255px;
+        width: 345px;
+    }
+
+    /* GALLERY PAGE */
+    #gallery {
+        padding: 50px;
+    }
+
+    /* CONTACT US PAGE - FORM SECTION */
+    #form-section {
+        padding: 40px 50px;
+        width: 480px;
+        margin: 0 auto;
+    }
+
 }
 
 @media (min-width:801px) {
 
-    body,
-    p,
-    button {
-        font-size: medium;
-    }
 
-     /* HEADER SECTION - MENU */
-    #menu a:not(.active):hover{
-        border-bottom:  2px solid #c43434;
+    /* HEADER SECTION - MENU */
+    #menu a:not(.active):hover {
+        border-bottom: 2px solid #c43434;
         border-bottom: 2px solid #8b8b8b;
         padding-bottom: 5px;
     }
@@ -793,7 +832,7 @@ form #requirements:focus-visible {
     #cover-text {
         width: 65%;
         height: 230px;
-        font-size: large;
+        font-size: medium;
     }
 
     /* ABOUT US SECTION */
@@ -802,7 +841,7 @@ form #requirements:focus-visible {
     }
 
     #main-purpose p {
-        font-size: medium;
+        font-size: 18px;
         line-height: 22px;
         padding: 0 20px;
     }
@@ -821,6 +860,12 @@ form #requirements:focus-visible {
     }
 
     /* SERVICES SECTION */
+    .simple-cover-image {
+        background: url(/assets/images/second_cover.jpeg) no-repeat center 21%;
+        background-size: cover;
+        height: 350px;
+    }
+
     #services {
         padding: 40px 60px;
     }
@@ -829,14 +874,37 @@ form #requirements:focus-visible {
         opacity: 1;
     }
 
+    /* SERVICES PAGE */
+    #main-services {
+        padding: 40px 60px;
+    }
+
+    .card-cover {
+        height: 275px;
+        width: 400px;
+    }
+
+    .card-details p {
+        padding: 0 20px;
+        text-align: center;
+    }
+
+    /* GALLERY PAGE */
+    #gallery {
+        padding: 50px 60px;
+        column-count: 2;
+        column-gap: normal;
+    }
+
+    /* CONTACT US PAGE - FORM SECTION */
+    #form-section {
+        padding: 40px 60px;
+        width: 550px;
+    }
+
 }
 
 @media (min-width:1025px) {
-
-    /* HEADER SECTION */
-    #menu li {
-        font-size: 125%;
-    }
 
     /* BUTTON TO TOP OF THE PAGE */
     .up-btn {
@@ -846,37 +914,37 @@ form #requirements:focus-visible {
 
     /* FOOTER SECTION */
     footer {
-        height: 280px;
+        height: 250px;
         font-size: 50px;
     }
 
+    /* SERVICES PAGE - SERVICES DETAILS COVER */
+    .card-cover {
+        height: 365px;
+        width: 500px;
+    }
+
+    /* GALLERY PAGE */
+    #gallery {
+        column-count: 3;
+    }
 }
 
 @media (min-width:1281px) {
 
-    body,
-    p,
-    button {
-        font-size: large;
-    }
-
     /* HEADER SECTION */
     #menu {
-        line-height: 90px;
-    }
-
-    #menu li {
-        font-size: 28px;
+        line-height: 80px;
     }
 
     /* COVER SECTION */
     #cover-image {
-        height: 600px;
+        height: 500px;
     }
 
     #cover-text {
         height: 350px;
-        font-size: 35px;
+        font-size: 28px;
     }
 
     /* ABOUT US SECTION */
@@ -885,7 +953,6 @@ form #requirements:focus-visible {
     }
 
     #main-purpose p {
-        font-size: large;
         line-height: 45px;
         padding: 0px 80px;
     }
@@ -904,6 +971,14 @@ form #requirements:focus-visible {
         width: 60px;
     }
 
+    .right {
+        right: 18%;
+    }
+
+    .left {
+        left: 18%;
+    }
+
     /* SERVICES SECTION */
     #services {
         padding: 60px 80px;
@@ -916,5 +991,42 @@ form #requirements:focus-visible {
         margin: 60px 0;
     }
 
+
+    /* SERVICES SECTION */
+
+    #main-services {
+        padding: 60px 80px;
+
+    }
+
+    .service-details-card {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    #princesses {
+        flex-direction: row-reverse;
+    }
+
+    .card-cover {
+        height: 400px;
+        width: 48%;
+    }
+
+    .card-details {
+        width: 49%;
+    }
+    .card-details span{
+        line-height: normal;
+    }
+    .card-details p{
+       margin-bottom: 10px;
+    }
+
+    /* CONTACT US PAGE - FORM SECTION */
+
+    #contact-phone div {
+        width: 290px;
+    }
 
 }
