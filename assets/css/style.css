@@ -75,7 +75,7 @@ button:active {
 #cover-image {
     height: 300px;
     width: 100%;
-    background: url("assets/images/cover.jpg") no-repeat center center;
+    background: url("../images/cover.jpg") no-repeat center center;
     background-size: cover;
     box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, rgba(0, 0, 0, 0.05) 0px 5px 10px;
     position: relative;
@@ -145,7 +145,6 @@ button:active {
     margin-bottom: 15px;
 }
 
-/* Title decoration from https://stackoverflow.com/questions/15557627/heading-with-horizontal-line-on-either-side */
 
 .decorated {
     text-align: center;
@@ -292,17 +291,17 @@ button:active {
 }
 
 #service1 {
-    background: url("assets/images/img_dance_cover.jpg") no-repeat center center;
+    background: url("../images/img_dance_cover.jpg") no-repeat center center;
     background-size: cover;
 }
 
 #service2 {
-    background: url("assets/images/img_princesses_cover.jpg") no-repeat center bottom;
+    background: url("../images/img_princesses_cover.jpg") no-repeat center bottom;
     background-size: cover;
 }
 
 #service3 {
-    background: url("assets/images/img_deco_cover.jpg") no-repeat center center;
+    background: url("../images/img_deco_cover.jpg") no-repeat center center;
     background-size: cover;
 }
 
@@ -422,7 +421,7 @@ footer a {
     width: 100%;
     height: 200px;
     position: relative;
-    background: url("assets/images/second_cover.jpeg") no-repeat center top;
+    background: url("../images/second_cover.jpeg") no-repeat center top;
     background-size: cover;
     box-shadow: rgba(33, 35, 38, 0.1) 0px 10px 10px -10px;
 }
@@ -488,19 +487,19 @@ footer a {
 }
 
 #card-cover-dance {
-    background: url("assets/images/img_dance_service_cover.jpg") no-repeat center center;
+    background: url("../images/img_dance_service_cover.jpg") no-repeat center center;
     background-size: cover;
 
 }
 
 #card-cover-princesses {
-    background: url("assets/images/img_princesses_service_cover.jpg") no-repeat center center;
+    background: url("../images/img_princesses_service_cover.jpg") no-repeat center center;
     background-size: cover;
 
 }
 
 #card-cover-deco {
-    background: url("assets/images/img_deco_service_cover.jpg") no-repeat center top;
+    background: url("../images/img_deco_service_cover.jpg") no-repeat center top;
     background-size: cover;
 
 }
@@ -776,7 +775,7 @@ form #requirements:focus-visible {
 
     /* SECOND COVER SECTION */
     .simple-cover-image {
-        background: url("assets/images/second_cover.jpeg") no-repeat center center;
+        background: url("../images/second_cover.jpeg") no-repeat center center;
         background-size: cover;
         height: 300px;
     }
@@ -861,7 +860,7 @@ form #requirements:focus-visible {
 
     /* SERVICES SECTION */
     .simple-cover-image {
-        background: url("assets/images/second_cover.jpeg") no-repeat center 21%;
+        background: url("../images/second_cover.jpeg") no-repeat center 21%;
         background-size: cover;
         height: 350px;
     }
