@@ -257,7 +257,7 @@ button:active {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 30px;
+    padding: 30px 30px 10px;
 
 }
 
@@ -452,7 +452,7 @@ footer a {
     flex-direction: column;
     text-align: center;
     margin-bottom: 30px;
-    padding: 30px;
+    padding: 30px 30px 0px;
 }
 
 #main-services>p {
@@ -544,7 +544,7 @@ footer a {
     line-height: 0;
     column-count: 1;
     column-gap: 0px;
-    padding: 40px 30px;
+    padding: 40px 30px 10px;
 }
 
 #gallery img {
@@ -745,7 +745,7 @@ form #requirements:focus-visible {
 
     /* SERVICES SECTION */
     #services {
-        padding: 30px 50px;
+        padding: 30px 50px 10px;
     }
 
     .circle-container {
@@ -787,7 +787,7 @@ form #requirements:focus-visible {
 
     /* SERVICES PAGE - DETAILS SECTION */
     #main-services {
-        padding: 40px 50px;
+        padding: 40px 50px 0px;
     }
 
     #main-services>p {
@@ -801,7 +801,7 @@ form #requirements:focus-visible {
 
     /* GALLERY PAGE */
     #gallery {
-        padding: 50px;
+        padding: 50px 50px 10px;
     }
 
     /* CONTACT US PAGE - FORM SECTION */
@@ -866,7 +866,7 @@ form #requirements:focus-visible {
     }
 
     #services {
-        padding: 40px 60px;
+        padding: 40px 60px 10px;
     }
 
     .circle-middle:hover {
@@ -875,7 +875,7 @@ form #requirements:focus-visible {
 
     /* SERVICES PAGE */
     #main-services {
-        padding: 40px 60px;
+        padding: 40px 60px 0px;
     }
 
     .card-cover {
@@ -890,7 +890,7 @@ form #requirements:focus-visible {
 
     /* GALLERY PAGE */
     #gallery {
-        padding: 50px 60px;
+        padding: 50px 60px 0px;
         column-count: 2;
         column-gap: normal;
     }
@@ -980,21 +980,25 @@ form #requirements:focus-visible {
 
     /* SERVICES SECTION */
     #services {
-        padding: 60px 80px;
+        padding: 60px 80px 0px;
     }
 
     #services-circles {
         width: 100%;
         display: flex;
         justify-content: space-around;
-        margin: 60px 0;
+        margin: 35px 0px 0px;
+    }
+
+    #services-btn {
+        display: none;
     }
 
 
     /* SERVICES SECTION */
 
     #main-services {
-        padding: 60px 80px;
+        padding: 60px 80px 0px;
 
     }
 
@@ -1015,11 +1019,16 @@ form #requirements:focus-visible {
     .card-details {
         width: 49%;
     }
-    .card-details span{
+
+    .card-details span {
         line-height: normal;
     }
-    .card-details p{
-       margin-bottom: 10px;
+
+    .card-details p {
+        margin-bottom: 10px;
+    }
+    #gallery{
+        padding:60px 80px 0px;
     }
 
     /* CONTACT US PAGE - FORM SECTION */
