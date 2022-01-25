@@ -290,6 +290,10 @@ button:active {
 
 }
 
+.circle-cover #desktop{
+    display: none;
+}
+
 #service1 {
     background: url("../images/img_dance_cover.jpg") no-repeat center center;
     background-size: cover;
@@ -988,6 +992,12 @@ form #requirements:focus-visible {
         display: flex;
         justify-content: space-around;
         margin: 35px 0px 0px;
+    }
+    .circle-cover #mobile{
+        display: none;
+    }
+    .circle-cover #desktop{
+        display: block;
     }
 
     #services-btn {
