@@ -290,7 +290,7 @@ button:active {
 
 }
 
-.circle-cover #desktop{
+.desktop{
     display: none;
 }
 
@@ -993,10 +993,10 @@ form #requirements:focus-visible {
         justify-content: space-around;
         margin: 35px 0px 0px;
     }
-    .circle-cover #mobile{
+    .mobile{
         display: none;
     }
-    .circle-cover #desktop{
+    .desktop{
         display: block;
     }
 
