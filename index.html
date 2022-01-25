@@ -66,19 +66,18 @@
         </div>
     </section>
     <!-- IMAGES SLIDER -->
-        <div id="slider">
-            <img class="mySlides" src="assets/images/img_dancers3.jpg" alt="Group of women holding hands and dancing">
-            <img class="mySlides" src="assets/images/img_princesses_group.jpg" alt="Five girls dressed in princesses">
-            <img class="mySlides" src="assets/images/img_dancers.jpg" alt="Group of dancers hugging in a circle">
-            <img class="mySlides" src="assets/images/img_deco3.jpg" alt="Decorative panel with blue baloons">
-            <img class="mySlides" src="assets/images/img_instruments.jpg" alt="Two girls singing at violin and flute">
-            <img class="mySlides" src="assets/images/img_deco4.jpg"
-                alt="Decorative panel with green baloons and lights">
-            <img class="mySlides" src="assets/images/img_dancers2.jpg"
-                alt="Four girls and four boys in traditional costumes dancing">
-            <button class="display-btn left" onclick="changeIndex(-1)">&#10094;</button>
-            <button class="display-btn right" onclick="changeIndex(1)">&#10095;</button>
-        </div>
+    <div id="slider">
+        <img class="mySlides" src="assets/images/img_dancers3.jpg" alt="Group of women holding hands and dancing">
+        <img class="mySlides" src="assets/images/img_princesses_group.jpg" alt="Five girls dressed in princesses">
+        <img class="mySlides" src="assets/images/img_dancers.jpg" alt="Group of dancers hugging in a circle">
+        <img class="mySlides" src="assets/images/img_deco3.jpg" alt="Decorative panel with blue baloons">
+        <img class="mySlides" src="assets/images/img_instruments.jpg" alt="Two girls singing at violin and flute">
+        <img class="mySlides" src="assets/images/img_deco4.jpg" alt="Decorative panel with green baloons and lights">
+        <img class="mySlides" src="assets/images/img_dancers2.jpg"
+            alt="Four girls and four boys in traditional costumes dancing">
+        <button class="display-btn left" onclick="changeIndex(-1)">&#10094;</button>
+        <button class="display-btn right" onclick="changeIndex(1)">&#10095;</button>
+    </div>
     <!-- SERVICES -->
     <section>
         <div id="services">
@@ -88,36 +87,42 @@
             <div id="services-circles">
                 <div class="circle-container">
                     <div class="circle-cover" id="service1">
-                        <a href="services.html#dance">
+                        <a href="services.html#dance" id="mobile">
+                            <div class="circle-text ">DANCE MOMENTS</div>
+                        </a>
+                        <a href="services.html#dance" id="desktop">
                             <div class="circle-middle">
                                 <div class="circle-text ">DANCE MOMENTS</div>
                             </div>
                         </a>
-                        <div class="circle-text mobile">DANCE MOMENTS</div>
                     </div>
                 </div>
                 <div class="circle-container">
                     <div class="circle-cover" id="service2">
-                        <a href="services.html#princesses">
+                        <a href="services.html#princesses" id="mobile">
+                            <div class="circle-text ">CHRISTENING FAIRIES</div>
+                        </a>
+                        <a href="services.html#princesses" id="desktop">
                             <div class="circle-middle">
                                 <div class="circle-text ">CHRISTENING FAIRIES</div>
                             </div>
                         </a>
-                        <div class="circle-text mobile">CHRISTENING FAIRIES</div>
                     </div>
                 </div>
                 <div class="circle-container">
                     <div class="circle-cover" id="service3">
-                        <a href="services.html#deco">
+                        <a href="services.html#deco" id="mobile">
+                            <div class="circle-text ">DECORATIONS</div>
+                        </a>
+                        <a href="services.html#deco" id="desktop">
                             <div class="circle-middle">
                                 <div class="circle-text ">DECORATIONS</div>
                             </div>
                         </a>
-                        <div class="circle-text mobile">DECORATIONS</div>
                     </div>
                 </div>
             </div>
-            
+
             <!-- BUTTON TO SERVICES DETAILS  -->
             <form action="services.html" method="GET">
                 <button id="services-btn" type="submit">Find Out More &#10095;&#10095;</button>
@@ -126,7 +131,8 @@
     </section>
     <!-- TOP PAGE BUTTON -->
     <form action="#menu" method="GET">
-        <button class="up-btn" type="submit" aria-label="Link to top of the page"><i class="fas fa-arrow-up"></i></button>
+        <button class="up-btn" type="submit" aria-label="Link to top of the page"><i
+                class="fas fa-arrow-up"></i></button>
     </form>
     <!-- FOOTER -->
     <footer>
