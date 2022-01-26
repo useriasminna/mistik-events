@@ -415,6 +415,7 @@ footer ul {
 
 footer a {
     color: white;
+    transition: 0.2s ease-out;
 }
 
 /* -------------------------SERVICES PAGE-------------------------------- */
@@ -903,6 +904,10 @@ form #requirements:focus-visible {
     #form-section {
         padding: 40px 60px;
         width: 550px;
+    }
+
+    footer a:hover{
+        color: #3a191d;;
     }
 
 }
