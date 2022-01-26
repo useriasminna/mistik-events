@@ -114,14 +114,14 @@ button:active {
     font-weight: bold;
     text-transform: uppercase;
     font-family: 'Playfair Display', serif;
-    font-size: 185%;
+    font-size: 160%;
 }
 
 #cover-text p {
     color: rgb(0 34 129 / 81%);
     font-weight: bold;
     font-family: 'Dancing Script', cursive;
-    font-size: 155%;
+    font-size: 135%;
 }
 
 /* OUR MISSION SECTION */
@@ -786,7 +786,6 @@ form #requirements:focus-visible {
     }
 
     .simple-cover-text {
-        font-size: 135%;
         top: 50%;
     }
 
@@ -905,7 +904,8 @@ form #requirements:focus-visible {
         padding: 40px 60px;
         width: 550px;
     }
-
+    
+    /* FOOTER - SOCIAL MEDIA LINKS*/
     footer a:hover{
         color: #3a191d;;
     }
@@ -1011,6 +1011,9 @@ form #requirements:focus-visible {
 
 
     /* SERVICES SECTION */
+    .simple-cover-image{
+        font-size: 20px;
+    }
 
     #main-services {
         padding: 60px 80px 0px;
