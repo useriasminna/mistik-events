@@ -16,11 +16,11 @@ This site was created so that users can easily understand all the content that a
 
 ### User Stories<br>
 * As a user, I want to understand the purpose of the site from the first interaction with it
-* As a user, I want to easily navigate through the website pages and content
-* As a user, I want to see relevant informations about the company and it's services
+* As a user, I want to easily navigate through the pages and content of the site
+* As a user, I want to see relevant informations about the company and its services
 * As a user, I want to see clear and reprezentative images
 * As a user, I want to be able to book a service or find contact informations
-* As a user, I want to see an atractive website that will make me want to return to it<br>
+* As a user, I want to see an attractive website that will make me want to go back to it<br>
 <hr>
 
 ## Wireframes
@@ -54,7 +54,7 @@ The website has four main pages (<b> HOME, SERVICES, GALLERY, CONTACT US</b>) th
 
 #### Navigation Menu
 The Nav Bar is present on all pages so the user cand easily switch between them at anytime. Every item in the nav list have an underline hover effect for inactive pages and also changes to icon when a page is active<br><br>
-<img src="assets/images/nav.jpg" width="90%">
+[![N|Solid](assets/images/nav.jpg)](assets/images/nav.jpg)
 
 #### Footer
 The Footer contains sugestive icons linked to the social media accounts and it can be found at the end of every page.<br><br>
@@ -85,7 +85,7 @@ The Gallery page shows the user a number of twelve pictures representatives for 
 #### CONTACT US PAGE
 The Contact page contains a form and a phone number for the user to get in touch whith the company for booking an event.
 All the form's input are required.<br><br>
-<img src="assets/images/form.jpg" height="800px"><br><br>
+<img src="assets/images/form.jpg" height="500px"><br><br>
 When the user fill all the spaces in the correct way a Succesfully Submited page appears.<br><br>
 <img src="assets/images/submit.jpg" height="400px"><br><br>
 
@@ -100,14 +100,94 @@ When the user fill all the spaces in the correct way a Succesfully Submited page
 * Even if the slider images were resized with the same aspect ratio, when sliding through them there can be noticed that the <code>slider div</code> pushes a little the elements bellow it. I have chosen to resize the images and not to set a specific <code>width</code> and <code>height</code> because I couldn't find the dimensions that will fit well in both extremities of media queries, that meaning that the dimensions would have to be set in too many media queries.
 * Set a minim value for the <code>form's date type input </code> that will automatically update everyday with the present day so the user won't be able to chose a date that has passed
 * Replace the <code>select</code> from the <code>form</code> with a <code>checkbox group</code> that will require at least one checkbox to be selected so the user can book multiple services at once
-* IPHONE 7
+* There are 2 commits on GitHub where the message doesn't correspond with the commit and I didn't knew how to delete and recommit them after pushing. One has the message "http.server" and another one was commited with the message "Fix accesibility".
+<hr>
+
 ## Testing
+I've manually tested every feature of the site so I can make sure they meet all the requirements:<br><br>
+
+* As a user, I want to understand the purpose of the site from the first interaction with it<br>
+When the site first loads, it will always appear on the home page, where the cover page shows a suggestive name and slogan for the company. Also, when the user scrolls through the Home Page, they will immediately find a description and some images that will familiarize them with the company's activity.<br><br>
+* As a user, I want to easily navigate through the pages and content of the site<br>
+The navigation menu is always at the top of the page, and the current page can be distinguished from the others because it turns into an icon. To help the user get to the menu faster, there is a button at the bottom of the page that will bring it to the top of the page. <br>
+I made sure that all the menu items behave accordingly when switching between them and the button links to the menu on every page.<br><br>
+* As a user, I want to see relevant information about the company and its services<br>
+Every description on the site is short and concise.<br><br>
+* As a user, I want to see clear and representative images<br>
+We chose real images from events or photo sessions with people participating in Mistik Events activities.<br>
+I made sure all the images are responsive and maintain the clarity on every device.<br><br>
+* As a user, I want to be able to book a service or find contact information<br>
+On the last page there is a form that can be filled in to book an event. The form will finally be updated when I learn how to use the right technologies for data storage.<br>
+I tested and made sure that the form display the Succesfully submited page when the user fills in the form in the correct way.<br><br>
+* As a user, I want to see an attractive website that will make me want to go back to it<br>
+We created an easy-to-use design using suggestive cover backgrounds, hover effects on each button and link, colors and fonts that bring the user closer to the idea of ​events and entertainment.<br>
+I tested all the buttons and links to make sure they redirect to the right link, that all the hover effects work on desktop and all the external links open in a new tab.<br><br>
+<hr>
+
 ## Validator Testing
+### HTML
+I validated the HTML code with the website URL using [HTML - W3C HTML Validator](https://validator.w3.org/#validate_by_uri+with_options)<br><br>
+[![N|Solid](assets/images/valid_html.jpg)](assets/images/valid_html.jpg)
+### CSS
+I validated the CSS code with the website URL using [CSS - Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri)<br><br>
+[![N|Solid](assets/images/valid_css.jpg)](assets/images/valid_css.jpg)
+### Lighthouse
+I generated a Lighthouse report for every page of the website.
+Each raport has a lower score on Best Practices based on <code>third-party cookies</code> Issue and an <code>unload listener</code> error which came from the Font Awesome API.<br><br>
+
+#### HOME
+[![N|Solid](assets/images/lighthouse1.jpg)](assets/images/lighthouse1.jpg)
+#### SERVICES
+[![N|Solid](assets/images/lighthouse2.jpg)](assets/images/lighthouse2.jpg)
+#### GALLERY
+The Performance gets a lower score because the <code> image</code> elements do not have explicit width and height.
+I chose to let the images have their unique dimensions so that the user can see them in their entirety.<br><br>
+[![N|Solid](assets/images/lighthouse3.jpg)](assets/images/lighthouse3.jpg)
+#### CONTACT US
+[![N|Solid](assets/images/lighthouse4.jpg)](assets/images/lighthouse4.jpg)
+#### CONTACT SUBMIT
+[![N|Solid](assets/images/lighthouse5.jpg)](assets/images/lighthouse1.jpg)
+### Accessibility
+I put the website through WAVE - accessibility evaluation tool.<br>
+The Full Report can be found [here](https://wave.webaim.org/report#/https://useriasminna.github.io/mistik-events/).
+<hr>
+
 ## Deployment
+This site was created using the [Code Institute Full Template](https://github.com/Code-Institute-Org/gitpod-full-template).
+The steps were as following:
+- Click the <i>Use this template</i> button
+- A New Repository page will appear, write a Repository name and a short description and press <i>Create repository from template</i>
+- Press the green Gitpod button to create your project workspace and start developing your website<br></b>
+  
+After finishing developing the site I deployed it on Githup Pages following the instructions:
+- Go to <i>Settings</i>
+- Scroll down to <i>Github Pages</i>
+- From Source choose <i>main</i> and Save, this is the branch from where your site will be deployed
+- A link to your website deployed will be generated
+<hr>
+
 ## Credits
 ### Content<br>
+The content on this side was created using real informations about Mistik Events.
 ### Code<br>
-### Media<br><br>
-## Tools
-## Acknowledgements<hr>
+- The Title decoration I used on the home page were taken and adapted from [Stack Over Flow](https://stackoverflow.com/questions/15557627/heading-with-horizontal-line-on-either-side)
+- The Javascript function for the Slider was taken and adapted from [w3schools](https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow)
+- I red about and adapted the RegExp pattern I used for the form input from [MDN Web Docs](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/input/tel)
+- All the <code>box-shadow</code> properties I used were taken from [CSS Scan](https://getcssscan.com/css-box-shadow-examples)
+- The Gallery structure was inspired from the Code Institute - Love Running project
+### Media<br>
+- The Cover images were taken from [Pexels](https://www.pexels.com/)
+- The other 25 images used as background or for the slider and gallery were real images taken from Mistik Events photoshoot
+<hr>
 
+## Tools
+[GitHub](https://github.com/) - used for hosting the source code of the site and the deployed site on GitHub Pages<br>
+[Gitpod Dev Environment](https://gitpod.io/) - used for developing the website<br>
+[HTML - W3C HTML Validator](https://validator.w3.org/#validate_by_uri+with_options) - used for validating the HTML<br>
+[CSS - Jigsaw CSS Validator](https://jigsaw.w3.org/css-validator/#validate_by_uri) - used for validating the CSS<br>
+[WAVE](https://wave.webaim.org/) - used for checking the accessibility of the website<br>
+[Favicon.io](https://favicon.io/) - used for generating the website favicon<br>
+[Tiny.jpg](https://tinyjpg.com/) - used for compressing the images<br>
+[Diffchecker](https://www.diffchecker.com/) - used for comparing the code<br>
+Chrome Lighthouse and Chrome Developer Tools  - used for checking performance of the website<br>
+<hr>
